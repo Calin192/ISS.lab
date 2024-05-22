@@ -1,0 +1,6 @@
+.label{
+    -fx-background-image: url('/com/example/iss/assets/chair.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
