@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iss.TransactionView">
+   <children>
+      <HBox layoutX="1.0" layoutY="-2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="146.0">
+               <children>
+                  <Label fx:id="pretLabel" alignment="CENTER" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="454.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="115.0" prefWidth="454.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="187.0" text="Card number:" />
+                        <TextField fx:id="cardNumberField" alignment="CENTER" prefHeight="29.0" prefWidth="390.0">
+                           <HBox.margin>
+                              <Insets right="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="114.0" prefWidth="454.0">
+                     <children>
+                        <Label text="Exp Date:" />
+                        <TextField fx:id="expDateField" alignment="CENTER" prefHeight="25.0" prefWidth="102.0">
+                           <HBox.margin>
+                              <Insets right="50.0" />
+                           </HBox.margin></TextField>
+                        <Label prefHeight="17.0" prefWidth="28.0" text="CVC:" />
+                        <TextField fx:id="cvcField" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="106.0" prefWidth="454.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="82.0" text="Name on Card" />
+                        <TextField fx:id="nameOnCardField" prefHeight="25.0" prefWidth="222.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="68.0" prefWidth="454.0">
+                     <children>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="221.0">
+                           <children>
+                              <Label prefHeight="48.0" prefWidth="221.0" text="Transaction handled and protected by the Federal Services of Trust-Me-Bro" wrapText="true" />
+                           </children></VBox>
+                        <VBox alignment="CENTER" prefHeight="68.0" prefWidth="233.0">
+                           <children>
+                              <Button fx:id="proceedButton" mnemonicParsing="false" onAction="#onProceedButton" prefHeight="25.0" prefWidth="116.0" text="Proceed" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
